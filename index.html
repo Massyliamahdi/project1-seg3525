@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>L’Instant Beauty Studio</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">L’Instant Beauty</div>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#experts">Experts</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#booking">Book Now</a></li>
+  </ul>
+</nav>
+
+<section id="home" class="hero">
+  <h1>Luxury Hair & Makeup Experience</h1>
+  <p>Modern, refined and elegant beauty services tailored to you.</p>
+  <button onclick="scrollToBooking()">Book an Appointment</button>
+</section>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="cards">
+
+    <div class="card">
+      <h3>Hair Styling</h3>
+      <p>Professional styling for events & daily elegance.</p>
+      <span>$60</span>
+    </div>
+
+    <div class="card">
+      <h3>Hair Treatment</h3>
+      <p>Deep conditioning & premium care.</p>
+      <span>$75</span>
+    </div>
+
+    <div class="card">
+      <h3>Professional Makeup</h3>
+      <p>Luxury makeup for special occasions.</p>
+      <span>$90</span>
+    </div>
+
+    <div class="card">
+      <h3>Bridal Package</h3>
+      <p>Complete bridal glam experience.</p>
+      <span>$250</span>
+    </div>
+
+  </div>
+</section>
+
+<section id="experts">
+  <h2>Our Experts</h2>
+  <div class="experts-container">
+    <div class="expert">
+      <h3>Jessica Morel</h3>
+      <p>Senior Hair Stylist</p>
+    </div>
+    <div class="expert">
+      <h3>Amira Benali</h3>
+      <p>Professional Makeup Artist</p>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <h2>Client Reviews</h2>
+  <p>★★★★★ “Absolutely stunning results! Highly recommend.”</p>
+  <p>★★★★★ “The most refined beauty studio in town.”</p>
+</section>
+
+<section id="booking">
+  <h2>Book Your Appointment</h2>
+  <form onsubmit="confirmBooking(event)">
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email Address" required>
+    <select required>
+      <option>Select Service</option>
+      <option>Hair Styling</option>
+      <option>Hair Treatment</option>
+      <option>Makeup</option>
+      <option>Bridal Package</option>
+    </select>
+    <input type="date" required>
+    <input type="time" required>
+    <button type="submit">Confirm Booking</button>
+  </form>
+</section>
+
+<section id="confirmation" class="hidden">
+  <h2>Booking Confirmed 💖</h2>
+  <p>Your appointment has been successfully scheduled.</p>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>📍 123 Elegance Street, Ottawa</p>
+  <p>📞 (613) 000-0000</p>
+  <p>🕒 Mon-Fri: 9AM - 6PM</p>
+</section>
+
+<script>
+function scrollToBooking() {
+  document.getElementById("booking").scrollIntoView({behavior: "smooth"});
+}
+
+function confirmBooking(event) {
+  event.preventDefault();
+  document.getElementById("confirmation").classList.remove("hidden");
+  document.getElementById("confirmation").scrollIntoView({behavior: "smooth"});
+}
+</script>
+
+</body>
+</html>
