@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff9f8;
+  color: #333;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  background: #f8e8e8;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to right, #f8dede, #fceeee);
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+}
+
+.hero button {
+  padding: 12px 30px;
+  border: none;
+  background: #d89ca4;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+section {
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  width: 220px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.card span {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.experts-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: auto;
+}
+
+input, select, button {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+button {
+  background: #d89ca4;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
