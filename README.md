@@ -1,1 +1,1 @@
-# project1-seg3525
+# E-Comerce site
